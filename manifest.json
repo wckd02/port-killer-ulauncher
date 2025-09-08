@@ -1,0 +1,41 @@
+{
+  "required_api_version": "2",
+  "name": "Port Killer",
+  "description": "Kill processes by port number directly from uLauncher",
+  "developer_name": "Cosmin Craciun",
+  "icon": "images/icon.svg",
+  "options": {
+    "query_debounce": 0.5
+  },
+  "preferences": [
+    {
+      "id": "port_kw",
+      "type": "keyword",
+      "name": "Port Killer",
+      "description": "Kill processes using network ports",
+      "default_value": "port"
+    },
+    {
+      "id": "show_system_ports",
+      "type": "select",
+      "name": "Show System Ports",
+      "description": "Include system/privileged ports in results",
+      "default_value": "false",
+      "options": [
+        {"value": "true", "text": "Yes"},
+        {"value": "false", "text": "No"}
+      ]
+    },
+    {
+      "id": "kill_method",
+      "type": "select",
+      "name": "Kill Method",
+      "description": "Method to terminate processes",
+      "default_value": "SIGTERM",
+      "options": [
+        {"value": "SIGTERM", "text": "Graceful (SIGTERM)"},
+        {"value": "SIGKILL", "text": "Force (SIGKILL)"}
+      ]
+    }
+  ]
+}

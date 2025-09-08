@@ -116,7 +116,7 @@ The extension uses multiple methods for port detection:
 
 ## License
 
-MIT LICENSE
+[MIT LICENSE](https://github.com/cosmincraciun97/port-killer-ulauncher/blob/main/LICENSE)
 
 ## Support
 

